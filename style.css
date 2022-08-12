@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5955b3;
+    --secondary-color: #3c2f60;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 0% 6%;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 20px 0;
+}
+
+.navbar-container div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container div img {
+    width: 7rem;
+    margin-right: 3rem;
+}
+  
+.navbar-container .list {
+    display: flex;
+    flex-direction: row;
+}
+  
+.list .list-item {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--black-color);
+    opacity: 0.6;
+    padding: 0 20px;
+}
+
+.list .list-item:first-child {
+    opacity: 1;
+}
+
+.navbar-container .grow-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+  
+.nav-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    width: 135px;
+    padding: 16px 23px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.banner-container div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3rem;
+    margin-right: 52rem;
+}
+
+.banner-container .heading-text {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.banner-container .description {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.banner-container .btn {
+    width: 175px;
+    margin-top: 60px;
+}
+
+.banner-container .heading-text span {
+    color: var(--primary-color);
+}
+
+.banner-container div:last-child {
+    position: absolute;
+    right: 0;
+    top: 8rem;
+}
+
+.banner-container div:last-child img {
+    width: 37rem;
+}
+
